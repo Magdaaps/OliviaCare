@@ -1,0 +1,16 @@
+name: Deploy to Production
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type YES to deploy to production'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm == 'YES'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Production
+        run: echo 'Production deployment placeholder'

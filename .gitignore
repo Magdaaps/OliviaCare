@@ -1,0 +1,23 @@
+node_modules/
+.next/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+.turbo/
+.DS_Store
+coverage/
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Office temp files
+~$*
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
